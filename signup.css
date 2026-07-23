@@ -1,0 +1,194 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0D1117;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===========================
+   SIGNUP CARD
+=========================== */
+
+.signup-card{
+
+    width:100%;
+    max-width:500px;
+
+    background:#161B22;
+
+    border:1px solid #2B313C;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.signup-card h1{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.signup-card p{
+
+    color:#9CA3AF;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #2B313C;
+
+    background:#0D1117;
+
+    color:#fff;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:#7C5CFF;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#7C5CFF;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(124,92,255,.30);
+
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+.login{
+
+    margin-top:25px;
+
+    text-align:center;
+
+}
+
+.login a{
+
+    color:#7C5CFF;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:550px){
+
+    .signup-card{
+
+        padding:28px;
+
+    }
+
+    .signup-card h1{
+
+        font-size:1.7rem;
+
+    }
+
+}
