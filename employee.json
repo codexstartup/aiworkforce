@@ -1,0 +1,31 @@
+[
+  {
+    "id":1,
+    "name":"AI Customer Support",
+    "price":499,
+    "category":"Support",
+    "trial":true,
+    "rating":4.9,
+    "description":"Answers customer questions 24/7."
+  },
+
+  {
+    "id":2,
+    "name":"AI Sales Manager",
+    "price":899,
+    "category":"Sales",
+    "trial":true,
+    "rating":4.9,
+    "description":"Converts visitors into paying customers."
+  },
+
+  {
+    "id":3,
+    "name":"AI Market Research",
+    "price":699,
+    "category":"Research",
+    "trial":true,
+    "rating":4.8,
+    "description":"Analyzes competitors and trends."
+  }
+]
