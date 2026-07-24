@@ -1,12 +1,13 @@
-AI Workforce V1
+# AI Workforce Changelog
 
-✅ Landing Page
-✅ Dashboard
-✅ Employee Workspace
-✅ Test Chat
+## v0.1
+
+- Landing Page
+- Dashboard
+- Employee Workspace
+- Test Chat
+- Login
+- Signup
 
 Status:
 Frontend MVP Complete
-
-Next Phase:
-Backend Development
