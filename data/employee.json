@@ -1,31 +1,87 @@
 [
   {
-    "id":1,
-    "name":"AI Customer Support",
-    "price":499,
-    "category":"Support",
-    "trial":true,
-    "rating":4.9,
-    "description":"Answers customer questions 24/7."
+    "id": 1,
+    "name": "AI Customer Support",
+    "price": 499,
+    "category": "Support",
+    "trial": true,
+    "rating": 4.9,
+    "description": "Answers customer questions 24/7.",
+    "status": "Available",
+    "featured": true,
+    "skills": [
+      "Customer Support",
+      "FAQ",
+      "Refunds",
+      "Website Knowledge"
+    ]
   },
-
   {
-    "id":2,
-    "name":"AI Sales Manager",
-    "price":899,
-    "category":"Sales",
-    "trial":true,
-    "rating":4.9,
-    "description":"Converts visitors into paying customers."
+    "id": 2,
+    "name": "AI Sales Manager",
+    "price": 899,
+    "category": "Sales",
+    "trial": true,
+    "rating": 4.9,
+    "description": "Converts visitors into paying customers.",
+    "status": "Available",
+    "featured": true,
+    "skills": [
+      "Lead Qualification",
+      "Sales",
+      "Objection Handling",
+      "Product Recommendation"
+    ]
   },
-
   {
-    "id":3,
-    "name":"AI Market Research",
-    "price":699,
-    "category":"Research",
-    "trial":true,
-    "rating":4.8,
-    "description":"Analyzes competitors and trends."
+    "id": 3,
+    "name": "AI Market Research",
+    "price": 699,
+    "category": "Research",
+    "trial": true,
+    "rating": 4.8,
+    "description": "Analyzes competitors and trends.",
+    "status": "Available",
+    "featured": false,
+    "skills": [
+      "Competitor Analysis",
+      "Market Trends",
+      "SWOT Analysis",
+      "Industry Research"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "AI Marketing",
+    "price": 699,
+    "category": "Marketing",
+    "trial": true,
+    "rating": 4.9,
+    "description": "Creates marketing campaigns and content.",
+    "status": "Available",
+    "featured": false,
+    "skills": [
+      "Social Media",
+      "SEO",
+      "Ad Copy",
+      "Email Campaigns"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "AI Data Analyst",
+    "price": 999,
+    "category": "Analytics",
+    "trial": true,
+    "rating": 5.0,
+    "description": "Analyzes business data and provides actionable insights.",
+    "status": "Available",
+    "featured": true,
+    "skills": [
+      "Sales Analysis",
+      "Business Reports",
+      "KPIs",
+      "Forecasting"
+    ]
   }
 ]
