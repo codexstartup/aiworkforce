@@ -1,0 +1,194 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0D1117;
+    color:#fff;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:270px;
+    background:#11161D;
+    border-right:1px solid #232A34;
+    padding:35px 25px;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+}
+
+.sidebar h2{
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#CFCFCF;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.sidebar nav a:hover{
+    background:#1C2330;
+    color:#fff;
+}
+
+.sidebar nav a.active{
+    background:#7C5CFF;
+    color:#fff;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content{
+    flex:1;
+    margin-left:270px;
+    padding:40px;
+}
+
+.hero{
+    margin-bottom:40px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#9CA3AF;
+    line-height:1.7;
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.stat-card{
+    background:#161B22;
+    border:1px solid #2B313C;
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+    border-color:#7C5CFF;
+}
+
+.stat-card h2{
+    font-size:2.2rem;
+    color:#7C5CFF;
+    margin-bottom:10px;
+}
+
+.stat-card span{
+    color:#B5B5B5;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.performance-card,
+.questions-card,
+.activity-card,
+.insight-card{
+    background:#161B22;
+    border:1px solid #2B313C;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.performance-card h2,
+.questions-card h2,
+.activity-card h2,
+.insight-card h2{
+    margin-bottom:20px;
+}
+
+.performance-card p,
+.questions-card p,
+.activity-card p,
+.insight-card p{
+    color:#CFCFCF;
+    padding:12px 0;
+    border-bottom:1px solid #232A34;
+}
+
+.performance-card p:last-child,
+.questions-card p:last-child,
+.activity-card p:last-child,
+.insight-card p:last-child{
+    border-bottom:none;
+}
+
+/* ===========================
+   INSIGHTS
+=========================== */
+
+.insight-card{
+    border-left:5px solid #7C5CFF;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .content{
+        margin-left:0;
+        padding:25px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}
