@@ -1,0 +1,292 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0D1117;
+    color:#fff;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:270px;
+    background:#11161D;
+    border-right:1px solid #232A34;
+    padding:35px 25px;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+}
+
+.sidebar h2{
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#CFCFCF;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.sidebar nav a:hover{
+    background:#1C2330;
+    color:#fff;
+}
+
+.sidebar nav a.active{
+    background:#7C5CFF;
+    color:#fff;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content{
+    flex:1;
+    margin-left:270px;
+    padding:40px;
+}
+
+.hero{
+    margin-bottom:40px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#9CA3AF;
+    line-height:1.7;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.status-card,
+.channels,
+.script-card,
+.history-card{
+    background:#161B22;
+    border:1px solid #2B313C;
+    border-radius:22px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.status-card h2,
+.channels h2,
+.script-card h2,
+.history-card h2{
+    margin-bottom:15px;
+}
+
+.channels p,
+.script-card p{
+    color:#B5B5B5;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+/* ===========================
+   STATUS GRID
+=========================== */
+
+.status-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.status-box{
+    background:#0F141B;
+    border:1px solid #2B313C;
+    border-radius:16px;
+    padding:22px;
+    transition:.3s;
+}
+
+.status-box:hover{
+    border-color:#7C5CFF;
+    transform:translateY(-5px);
+}
+
+.status-box h3{
+    margin-bottom:12px;
+}
+
+.green{
+    color:#3DDC84;
+    font-weight:600;
+}
+
+.orange{
+    color:#F59E0B;
+    font-weight:600;
+}
+
+/* ===========================
+   CHANNELS
+=========================== */
+
+.channel-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.channel-card{
+    background:#0F141B;
+    border:1px solid #2B313C;
+    border-radius:18px;
+    padding:25px;
+    transition:.3s;
+}
+
+.channel-card:hover{
+    transform:translateY(-6px);
+    border-color:#7C5CFF;
+}
+
+.channel-card h3{
+    margin-bottom:15px;
+}
+
+.channel-card p{
+    color:#A7A7A7;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.channel-card.active{
+    border-color:#7C5CFF;
+}
+
+.channel-card.disabled{
+    opacity:.65;
+}
+
+/* ===========================
+   CODE BLOCK
+=========================== */
+
+pre{
+    background:#0F141B;
+    border:1px solid #2B313C;
+    border-radius:14px;
+    padding:20px;
+    overflow:auto;
+    color:#3DDC84;
+    margin:25px 0;
+    font-size:14px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.button-group{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+button{
+    border:none;
+    background:#7C5CFF;
+    color:#fff;
+    padding:14px 24px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:hover:not(:disabled){
+    transform:translateY(-2px);
+    background:#8A6AFF;
+}
+
+button:disabled{
+    background:#2B313C;
+    cursor:not-allowed;
+    color:#8B8B8B;
+}
+
+/* ===========================
+   HISTORY
+=========================== */
+
+.history-card p{
+    color:#CFCFCF;
+    padding:12px 0;
+    border-bottom:1px solid #232A34;
+}
+
+.history-card p:last-child{
+    border-bottom:none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .content{
+        margin-left:0;
+        padding:25px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .status-grid,
+    .channel-grid{
+        grid-template-columns:1fr;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
