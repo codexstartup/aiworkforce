@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="settings.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>🤖 AI Workforce</h2>
+
+        <nav>
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="employee.html">🤖 Overview</a>
+            <a href="knowledge.html">📚 Knowledge Base</a>
+            <a href="test-chat.html">💬 Test Chat</a>
+            <a href="deploy.html">🚀 Deploy</a>
+            <a href="analytics.html">📊 Analytics</a>
+            <a href="conversations.html">💬 Conversations</a>
+            <a href="settings.html" class="active">⚙️ Settings</a>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="content">
+
+        <header class="hero">
+
+            <h1>⚙️ Settings</h1>
+
+            <p class="subtitle">
+
+                Customize your AI employee and deployment preferences.
+
+            </p>
+
+        </header>
+
+        <!-- AI Settings -->
+
+        <section class="setting-card">
+
+            <h2>🤖 AI Employee</h2>
+
+            <label>Employee Name</label>
+
+            <input type="text" value="AI Customer Support">
+
+            <label>Response Tone</label>
+
+            <select>
+
+                <option>Professional</option>
+                <option>Friendly</option>
+                <option>Casual</option>
+
+            </select>
+
+            <label>Language</label>
+
+            <select>
+
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Spanish</option>
+
+            </select>
+
+        </section>
+
+        <!-- Business -->
+
+        <section class="setting-card">
+
+            <h2>🏢 Business</h2>
+
+            <label>Business Name</label>
+
+            <input type="text" placeholder="Enter Business Name">
+
+            <label>Support Email</label>
+
+            <input type="email" placeholder="support@company.com">
+
+            <label>Website</label>
+
+            <input type="url" placeholder="https://yourwebsite.com">
+
+        </section>
+
+        <!-- Notifications -->
+
+        <section class="setting-card">
+
+            <h2>🔔 Notifications</h2>
+
+            <label><input type="checkbox" checked> Email Notifications</label>
+
+            <label><input type="checkbox" checked> Human Escalation Alerts</label>
+
+            <label><input type="checkbox"> Weekly Analytics Report</label>
+
+        </section>
+
+        <!-- Security -->
+
+        <section class="setting-card">
+
+            <h2>🔒 Security</h2>
+
+            <button>Change Password</button>
+
+            <button>Enable Two-Factor Authentication</button>
+
+        </section>
+
+        <!-- Danger Zone -->
+
+        <section class="danger-card">
+
+            <h2>⚠️ Danger Zone</h2>
+
+            <p>
+
+                Permanently delete this AI employee and all its knowledge.
+
+            </p>
+
+            <button class="delete-btn">
+
+                Delete AI Employee
+
+            </button>
+
+        </section>
+
+        <!-- Save -->
+
+        <section class="save-card">
+
+            <button>
+
+                💾 Save Changes
+
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
