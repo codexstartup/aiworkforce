@@ -1,0 +1,3 @@
+const SECRET = "BL4Z3_AI_WORKFORCE_SUPER_SECRET_2026";
+
+module.exports = SECRET;

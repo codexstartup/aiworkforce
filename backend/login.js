@@ -5,7 +5,7 @@ const db = require("./database");
 
 const router = express.Router();
 
-const SECRET = "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET";
+const SECRET = require("./config");
 
 router.post("/login", (req, res) => {
 

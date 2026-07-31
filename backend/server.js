@@ -7,7 +7,7 @@ const loginRoutes = require("./login");
 
 const app = express();
 
-const SECRET = "CHANGE_THIS_TO_THE_SAME_SECRET_AS_LOGIN_JS";
+const SECRET = require("./config");
 
 app.use(cors());
 app.use(express.json());
