@@ -29,15 +29,17 @@
             Sign in to manage your AI Workforce.
         </p>
 
-        <form>
+        <form id="loginForm">
 
             <div class="input-group">
 
-                <label>Email</label>
+                <label>Username</label>
 
                 <input
-                    type="email"
-                    placeholder="Enter your email"
+                    id="username"
+                    type="text"
+                    placeholder="Enter your username"
+                    required
                 >
 
             </div>
@@ -47,8 +49,10 @@
                 <label>Password</label>
 
                 <input
+                    id="password"
                     type="password"
                     placeholder="Enter your password"
+                    required
                 >
 
             </div>
@@ -75,6 +79,8 @@
 
         </form>
 
+        <p id="msg"></p>
+
         <p class="signup">
 
             Don't have an account?
@@ -90,6 +96,8 @@
     </div>
 
 </div>
+
+<script src="login.js"></script>
 
 </body>
 

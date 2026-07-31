@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Workforce Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Workforce Admin</h1>
+
+<form id="employeeForm">
+
+<input
+id="name"
+type="text"
+placeholder="Employee Name"
+required>
+
+<input
+id="price"
+type="number"
+placeholder="Price">
+
+<input
+id="currency"
+type="text"
+placeholder="Currency"
+value="USD">
+
+<select id="status">
+
+<option>Available</option>
+<option>Coming Soon</option>
+
+</select>
+
+<input
+id="category"
+type="text"
+placeholder="Category">
+
+<button type="submit">
+
+Add Employee
+
+</button>
+
+</form>
+
+<hr>
+
+<div id="employees"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
